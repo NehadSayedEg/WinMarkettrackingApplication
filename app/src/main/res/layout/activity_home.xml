@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeActivity">
+
+
+
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/lottie_view"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_170sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:lottie_autoPlay="true"
+    app:lottie_rawRes="@raw/product"
+
+    />
+
+
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/searchAssetBtn"
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/dark_orange_btn"
+    android:elevation="@dimen/_10sdp"
+    android:text="@string/search_asset"
+    android:paddingEnd="@dimen/_5sdp"
+    android:paddingStart="@dimen/_5sdp"
+    android:fontFamily="@font/ubuntu_bold"
+
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_15ssp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.524"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/lottie_view" />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/allAssetsBtn"
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/light_orange_btn"
+    android:elevation="@dimen/_10sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:text="@string/all_assets"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_15ssp"
+    android:fontFamily="@font/ubuntu_bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/searchAssetBtn" />
+
+
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/clearDataBtn"
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/dark_orange_btn"
+    android:elevation="@dimen/_10sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:text="@string/clear_old_data"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_15ssp"
+    android:fontFamily="@font/ubuntu_bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/allAssetsBtn" />
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/exportFilesBtn"-->
+<!--        android:layout_width="@dimen/_170sdp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/light_orange_btn"-->
+<!--        android:elevation="@dimen/_10sdp"-->
+<!--        android:text="@string/export_files"-->
+<!--        android:paddingEnd="@dimen/_5sdp"-->
+<!--        android:paddingStart="@dimen/_5sdp"-->
+<!--        android:fontFamily="@font/ubuntu_bold"-->
+
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_15ssp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.524"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/clearDataBtn" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

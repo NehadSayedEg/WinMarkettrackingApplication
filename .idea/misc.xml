@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/drawable/custom_card.xml" value="0.1335" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/drawable/custom_edittext.xml" value="0.1335" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/drawable/dark_orange_btn.xml" value="0.1165" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1165" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/drawable/light_orange_btn.xml" value="0.1165" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/activity_about_win.xml" value="0.1" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/activity_all_products.xml" value="0.1796875" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/activity_export_files_btn.xml" value="0.1796875" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/activity_exportfiles.xml" value="0.1796875" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/activity_find_market_itemctivity.xml" value="0.16666666666666666" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/dialog_layout.xml" value="0.45102040816326533" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/layout/market_item.xml" value="0.1796875" />
+        <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

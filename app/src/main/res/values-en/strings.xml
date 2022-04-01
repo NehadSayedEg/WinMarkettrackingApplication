@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="enter_price_update">Enter price Update</string>
+    <string name="update_price">Update Price</string>
+    <string name="change_price_btn">change price </string>
+    <string name="cancel_btn">Cancel</string>
+
+    <!--    Main Activity -->
+    <string name="send_to">Send to...</string>
+    <string name="import_file">Import File</string>
+    <string name="continue_tracking">Continue Tracking</string>
+    <string name="clear_old_data">Clear Old Data</string>
+    <string name="u00a9_about_win">© About Win</string>
+    <string name="arabic_lang">عربى</string>
+    <string name="english">English</string>
+    <string name="loadMesaage">Please wait Will loading data</string>
+    <string name="loadTitle"> load data from excel</string>
+
+
+    <!--Home Activity-->
+    <string name="click_to_select_location"><font size="25">click to select Location</font></string>
+    <string name="scan_location">Scan location</string>
+    <string name="add_asset">Add Asset</string>
+
+    <string name="all_assets">All Products</string>
+    <string name="clear_old">Clear Old Data</string>
+    <string name="search_asset">Search Products</string>
+
+
+    <!--    item card-->
+    <string name="description">Description:</string>
+    <string name="assetnotfound">Asset not found:</string>
+
+    <string name="barcode">Barcode:</string>
+    <string name="location">Location:</string>
+    <string name="status">Status</string>
+    <string name="statusitem">statusitem</string>
+
+    <!--    missing Activity -->
+    <string name="missing_assets">Missing Assets</string>
+
+    <!--    missing found -->
+    <string name="found_assets">Found Assets</string>
+    <string name="itemStatusMissing">Missing</string>
+    <string name="itemStatusfound">Found</string>
+
+    <!--    scan Activity-->
+    <string name="barcodeET">Barcode</string>
+    <string name="finish_scanBtn">Finish Scan</string>
+
+    <!--    Assets location Activity-->
+    <string name="scan_assetsBtn">Scan Assets</string>
+    <string name="found_assetsBtn">Found Assets</string>
+    <string name="missing_assetsBtn">Missing Assets</string>
+    <string name="export_files">Export Files</string>
+    <string name="back_to_location">back to location</string>
+    <string name="openfolder">Open Files Folder</string>
+
+    <!--    Search Activity -->
+    <string name="scanned_before">Scanned before:</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="back">Back</string>
+    <string name="scannedstatus">scannedStatus</string>
+    <string name="bar">Barcode</string>
+
+    <!--    Alert Dialog clear Storage  -->
+
+    <string name="deleteTitle">Delete Data</string>
+    <string name="deleteMessage">Are you Sure you want to delete Data?</string>
+    <string name="deleteBtn">Delete</string>
+    <string name="cancelBtn">Cancel</string>
+
+
+    <string name="toastLocation">Please select  location first </string>
+    <string name="toastimported">successfully imported</string>
+
+
+    <!--    scan Activity -->
+    <string name="inlocation">Asset In location </string>
+    <string name="wronglocation">Asset not In place </string>
+    <string name="alertTitle">this asset must be in</string>
+    <string name="alertmessage">Do you want to change its location?</string>
+    <string name="alertPostiveBtn">change location</string>
+    <string name="alertCancelBtn">No</string>
+
+    <string name="newLocToast"> new Location is set</string>
+
+
+    <string name="dialogScanMessage"> Wait Items no Scanned Yet </string>
+    <string name="alertScanPostiveBtn">OK</string>
+    <string name="alertScanCancelBtn">Continue Scan</string>
+
+
+
+
+    <!--    export Sheets Activity -->
+
+    <string name="folderCreatedToast">Folder Successfully created </string>
+    <string name="folderExistToast">Folder Already Exists </string>
+
+    <string name="dialogExportMessage"> Do you finish scanning to export reports </string>
+    <string name="alertExportPostiveBtn">Export Reports</string>
+    <string name="alertExportCancelBtn">No</string>
+    <string name="dialogExportTitle"> Export reports </string>
+
+
+
+
+    <string name="aboutString">Winwin Integrated Solutions is a total solution provider company established by Amir Samir, a renowned expert in the field of total integrated solutions field and with an experience of 22 years in the field. The company was founded in 2019 in Cairo, Egypt. The company has reached a well known reputation in few years and accomplished a great success in the market field.\n\nHead Office:\nPiece 6214, ElKods Street ,\nfrom Street 9, Mokattam Cairo-Egypt ,\nPO Box 11570\nTel/Fax: +20228404247\nHotline:\n+201205WinWin\n+201205946946\nWebsite: www.winwinis.com\nEmail: info@winwinis.com</string>
+
+    <string name="print"> print </string>
+    <string name="price">price</string>
+
+
+</resources>
