@@ -119,6 +119,8 @@
     <string name="print"> اطبع </string>
     <string name="price"> سعر </string>
 
+    <string name="sale_pricing"> تسعير التخفيض</string>
+    <string name="default_pricing">تسعير الاصلى</string>
 
 
 

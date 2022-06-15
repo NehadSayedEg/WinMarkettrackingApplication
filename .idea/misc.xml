@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Apk Demo/Price Printing App/WinMarkettrackingApplication/app/src/main/res/drawable/dark_orange_btn.xml" value="0.135" />
+        <entry key="..\:/Apk Demo/Price Printing App/WinMarkettrackingApplication/app/src/main/res/drawable/light_orange_btn.xml" value="0.135" />
+        <entry key="..\:/Apk Demo/Price Printing App/WinMarkettrackingApplication/app/src/main/res/layout/activity_find_market_itemctivity.xml" value="0.10009057971014493" />
+        <entry key="..\:/Apk Demo/Price Printing App/WinMarkettrackingApplication/app/src/main/res/layout/activity_home.xml" value="0.1796875" />
+        <entry key="..\:/Apk Demo/Price Printing App/WinMarkettrackingApplication/app/src/main/res/layout/activity_main.xml" value="0.165625" />
         <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/drawable/custom_card.xml" value="0.1335" />
         <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/drawable/custom_edittext.xml" value="0.1335" />
         <entry key="..\:/Projects/WinMarkettrackingApplication/app/src/main/res/drawable/dark_orange_btn.xml" value="0.1165" />

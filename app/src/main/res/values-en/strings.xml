@@ -113,5 +113,7 @@
     <string name="print"> print </string>
     <string name="price">price</string>
 
+    <string name="sale_pricing">Sale pricing</string>
+    <string name="default_pricing">default pricing</string>
 
 </resources>

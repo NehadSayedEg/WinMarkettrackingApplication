@@ -34,6 +34,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.dantsu.escposprinter.EscPosPrinter;
@@ -143,6 +144,37 @@ public class FindMarketItemctivity extends AppCompatActivity {
             }
         });
 
+        binding.radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId){
+
+                    case R.id.defaultBtn:
+
+                        binding.printViewDefault.setVisibility(View.VISIBLE);
+                        binding.printView.setVisibility(View.GONE);
+
+                        binding.printBtn.setVisibility(View.GONE);
+                        binding.printDefaultBtn.setVisibility(View.VISIBLE);
+
+                        break;
+
+                    case R.id.saleBtn:
+                        binding.printViewDefault.setVisibility(View.GONE);
+
+                        binding.printView.setVisibility(View.VISIBLE);
+                        binding.printBtn.setVisibility(View.VISIBLE);
+                        binding.printDefaultBtn.setVisibility(View.GONE);
+
+
+
+                        break;
+
+
+                }
+            }
+        });
+
 
 
         binding.printBtn.setOnClickListener(new View.OnClickListener() {
@@ -162,6 +194,24 @@ public class FindMarketItemctivity extends AppCompatActivity {
 
     }
 });
+
+        binding.printDefaultBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    printImageDefaultPrice();
+                } catch (EscPosConnectionException e) {
+                    e.printStackTrace();
+                } catch (EscPosEncodingException e) {
+                    e.printStackTrace();
+                } catch (EscPosBarcodeException e) {
+                    e.printStackTrace();
+                } catch (EscPosParserException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
 
 
     }
@@ -223,6 +273,33 @@ public class FindMarketItemctivity extends AppCompatActivity {
     }
 
 
+    public void printImageDefaultPrice() throws EscPosConnectionException, EscPosEncodingException, EscPosBarcodeException, EscPosParserException {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.BLUETOOTH}, FindMarketItemctivity.PERMISSION_BLUETOOTH);
+        } else if (ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_ADMIN) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.BLUETOOTH_ADMIN}, FindMarketItemctivity.PERMISSION_BLUETOOTH_ADMIN);
+        } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S && ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, FindMarketItemctivity.PERMISSION_BLUETOOTH_CONNECT);
+        } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S && ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.BLUETOOTH_SCAN}, FindMarketItemctivity.PERMISSION_BLUETOOTH_SCAN);
+        } else {
+            // Your code HERE
+
+            Bitmap image = ConvertLayoutToImage(binding.printViewDefault);
+
+
+
+
+            EscPosPrinter printer = new EscPosPrinter(BluetoothPrintersConnections.selectFirstPaired(), 203, 48f, 32);
+            printer
+                    .printFormattedText(
+                            "[C]<img>" + PrinterTextParserImg.bitmapToHexadecimalString(printer, image )+"</img>\n"
+
+
+                    );
+        }
+    }
+
 
 
     private void AssetsScan() {
@@ -245,8 +322,8 @@ public class FindMarketItemctivity extends AppCompatActivity {
                     if(assetslList.size()>=0){
 
                         binding.assetItemLayout.setVisibility(View.VISIBLE);
-                        binding.printView.setVisibility(View.VISIBLE);
-                        binding.printBtn.setVisibility(View.VISIBLE);
+                       // binding.printView.setVisibility(View.VISIBLE);
+                      //  binding.printBtn.setVisibility(View.VISIBLE);
 
                         String  barcodeTxt = assetslList.get(i).getBarcode() ;
                         binding.itemBarcode.setText(barcodeTxt);
@@ -256,9 +333,12 @@ public class FindMarketItemctivity extends AppCompatActivity {
                         binding.itemDes.setText(desTxt);
                         Log.d( "AssetsScan: barcode " , desTxt);
                         binding.descriptionTv.setText(desTxt);
+                        binding.DesDefaultTv.setText(desTxt);
+
 
                         String  firstPrice = String.valueOf( assetslList.get(i).getPrice());
                         binding.firstPriceTX.setText(firstPrice);
+                        binding.defaultPriceTv.setText(firstPrice);
 
                         String  updatePrice = String.valueOf( assetslList.get(i).getUpdatePrice());
                         binding.updatedPriceTv.setText(updatePrice);
